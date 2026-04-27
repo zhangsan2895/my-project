@@ -1,0 +1,53 @@
+# HelloAgents
+hello-agents[protocols]==0.2.9
+
+# FastAPI
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# HTTP
+httpx>=0.27.0
+aiohttp>=3.10.0
+
+# Env
+python-dotenv>=1.0.0
+
+# CORS
+python-multipart>=0.0.9
+
+# Logging
+loguru>=0.7.0
+
+# MCP
+fastmcp>=2.0.0
+uv>=0.8.0
+
+# Utils
+python-dateutil>=2.8.2
+huggingface_hub>=0.25.0
+
+# LangChain (Phase 1)
+langchain>=1.2.15
+langchain-core>=1.3.0
+langchain-mcp-adapters>=0.2.2
+langgraph>=1.1.9
+langchain-openai>=1.2.0
+
+# LangChain RAG (Phase 3)
+langchain-community>=0.3.0
+langchain-huggingface>=0.1.0
+langchain-text-splitters>=0.3.0
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+# torch: 请根据 CUDA 版本单独安装，不在此固定，例如：
+#   CUDA 12.1: pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   CUDA 11.8: pip install torch --index-url https://download.pytorch.org/whl/cu118
+#   CPU only:  pip install torch
+transformers>=4.40.0
+accelerate>=0.30.0
+
+# RAG Crawler (Phase 3 - Knowledge Base Generator)
+beautifulsoup4>=4.12.0
+trafilatura>=1.12.0
