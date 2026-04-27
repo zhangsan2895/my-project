@@ -52,7 +52,7 @@ FastAPI
 | **RAG 检索** | FAISS · HuggingFace `BAAI/bge-large-zh-v1.5` · LangChain Community |
 | **知识库爬虫** | httpx · trafilatura · BeautifulSoup4 · robots.txt 合规检查 |
 | **后端** | FastAPI · Pydantic v2 · uvicorn |
-| **MCP 工具** | amap-mcp-server（via `uvx`，stdio 传输） |
+| **MCP ** | amap-mcp-server（via `uvx`，stdio 传输） |
 | **前端** | Vue 3 · TypeScript · Vite · Ant Design Vue · 高德地图 JS API |
 
 ---
@@ -348,19 +348,3 @@ AGENT_BACKEND=legacy                # legacy=HelloAgents / langchain=LangChain
 
 新增城市知识库时，在 `backend/app/rag/crawler/city_config.py` 中添加城市配置，运行爬虫脚本后重建索引即可。
 
-## 📜 开源协议
-
-CC BY-NC-SA 4.0
-
-## 🙏 致谢
-
-- [HelloAgents 框架](https://github.com/jjyaoao/HelloAgents) — 本项目二次开发的基础框架
-- [Hello-Agents 教程](https://github.com/datawhalechina/Hello-Agents) — 智能体学习资料
-- [高德地图开放平台](https://lbs.amap.com/) — 地图与 POI 数据服务
-- [amap-mcp-server](https://github.com/sugarforever/amap-mcp-server) — 高德地图 MCP 服务器
-- [LangChain](https://github.com/langchain-ai/langchain) / [LangGraph](https://github.com/langchain-ai/langgraph) — Agent 扩展框架
-- [BAAI/bge-large-zh-v1.5](https://huggingface.co/BAAI/bge-large-zh-v1.5) — 中文向量 Embedding 模型
-
----
-
-**HelloAgents 智能旅行助手** — 让旅行计划变得简单而智能 🌈
